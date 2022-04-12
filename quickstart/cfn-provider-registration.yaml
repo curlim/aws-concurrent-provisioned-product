@@ -6,7 +6,7 @@ Parameters:
     Default: curlim
   SourceBucketPrefix:
     Type: String
-    Default: release/aws-concurrent-provisioned-product
+    Default: release/aws-concurrent-provisioned-product-resource
   Version:
     Type: String
     Default: v2.0.0
