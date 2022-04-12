@@ -3,13 +3,13 @@ Description: Registers the latest version of the ProServe::ServiceCatalog::Concu
 Parameters:
   SourceBucketName:
     Type: String
-    Default: aws-enterprise-jumpstart
+    Default: curlim
   SourceBucketPrefix:
     Type: String
-    Default: aws-concurrent-provisioned-product/proserve-servicecatalog-concurrentprovisionedproduct-
+    Default: release/aws-concurrent-provisioned-product
   Version:
     Type: String
-    Default: v1.1.1
+    Default: v2.0.0
 
 Resources:
   DdbLockTable:
@@ -96,7 +96,7 @@ Resources:
     Type: AWS::CloudFormation::ResourceVersion
     Properties:
       ExecutionRoleArn: !GetAtt CfnResourceProviderExecutionRole.Arn
-      SchemaHandlerPackage: !Sub s3://${SourceBucketName}/${SourceBucketPrefix}${Version}.zip
+      SchemaHandlerPackage: !Sub s3://${SourceBucketName}/${SourceBucketPrefix}/${Version}.zip
       TypeName: ProServe::ServiceCatalog::ConcurrentProvisionedProduct
       LoggingConfig:
           LogGroupName: !Ref CfnResourceLogGroup
