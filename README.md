@@ -18,7 +18,7 @@ Details, see in the use case specific [README](control-tower-sc-extension/README
 
 You can use the following link to deploy the CloudFormation resource provider directly into your AWS account. Ensure you are logged into the AWS Console before following it.
 
-[Quickstart CloudFormation Link](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Faws-enterprise-jumpstart%2Faws-concurrent-provisioned-product%2Fcfn-provider-registration.yaml)
+[Quickstart CloudFormation Link](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fcurlim%2Frelease%2Faws-concurrent-provisioned-product-resource%2Fcfn-provider-registration.yaml)
 
 ## Usage
 
